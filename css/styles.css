@@ -22,10 +22,13 @@ a {
 }
 
 .container {
-    max-width: 1158px;
+    max-width: 1440px;
     padding: 0px 15px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
+
+
+
 
 /* #endregion Global Styles */
 
@@ -132,26 +135,61 @@ a {
 /* #endregion Header */
 
 /* #region Hero Section 1 */
+
+
 .hero {
     background-color: #2e2f42;
+    width: auto;
+    align-items: center;
 }
 
 .text {
+    font-weight: 700;
     font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
+    line-height: 1.07143;
     letter-spacing: 0.02em;
-    color: #ffffff;
+    text-align: center;
+    color: #fff;
+    padding: 188px 472px; 
 }
 
 .btn {
-    background-color: #4D5AE5;
+    position: absolute;
+        left: 50%;
+        top: calc(100% - 80px);
+        /* 100% висоти контейнера мінус 80px */
+        transform: translateX(-50%);
+        /* Центрування по горизонталі */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #ffffff;
-    cursor: pointer;
+    color: #fff;
+
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+
+    background: #4d5ae5;
+       
+    
 }
+
+.hero-container {
+    position: relative;
+    /* Щоб кнопка позиціонувалася відносно контейнера */
+    height: 500px;
+    /* Висота контейнера може бути довільною */
+}
+
+
 
 .btn:hover,
 .btn:focus {
@@ -161,19 +199,47 @@ a {
 /* #endregion Hero Section */
 
 /* #region Features Section 2*/
+
+.features {
+    width: 1128px;
+    height: auto;
+    padding: 156px 120px;
+    margin: auto;
+}
+
+.features-name {
+    visibility:hidden;
+}
+.features-list {
+    display: flex;
+    text-align: center;
+    
+}
+
 .features-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: left;
     
+}
+
+.features-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
 }
   
 
 .features-p {
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: left;
+    gap: 24px;
 }
 
 /* #endregion Features Section */
@@ -181,10 +247,15 @@ a {
 /* #region Team Section 3*/
 .team-section {
     background-color: #F4F4FD;
+    align-items: center;
+    padding: 120px;
 }
 
 .team-list {
     list-style-type: none;
+    display: flex;
+    padding: 0 120px;
+    align-items: center;
     
 }
 
@@ -195,19 +266,29 @@ a {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    padding: 120px 0;
+    
 }
 
 .team-item {
-    background-color: #FFFFFF;       
-    text-align: unset;   
+    margin: 0 24px;
+    border-radius: 0 0 4px 4px;
+    padding: 0px 0px 32px 0px;
+    width: 264px;
+    height: 380px;
+
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
 }
 
 .team-member-name {
+    text-align: center;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-top: 32px;
 }
 
 .team-member-role {
@@ -215,10 +296,22 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding-top: 8px;
+    text-align: center;
+    
 }
 /* #endregion Team Section */
 
 /* #region Portfolio Section */
+.portfolio-item {
+    border-bottom: 1px solid #e7e9fc;
+        border-left: 1px solid #e7e9fc;
+        border-right: 1px solid #e7e9fc;
+        padding: 32px 16px;
+        width: 360px;
+        height: 120px;
+}
+
 .portfolio-title {
     font-size: 36px;
     line-height: 1.11;
@@ -226,6 +319,7 @@ a {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    padding-top: 120px;
 }
 
 .portfolio-name {
