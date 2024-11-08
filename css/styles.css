@@ -27,6 +27,10 @@ a {
     margin: 0px auto;
 }
 
+.section {
+    padding: 120 0;
+}
+
 
 
 
@@ -55,8 +59,6 @@ a {
     align-items: center;
     gap: 40px;
 }
-
-
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -135,12 +137,15 @@ a {
 /* #endregion Header */
 
 /* #region Hero Section 1 */
-
-
 .hero {
     background-color: #2e2f42;
     width: auto;
     align-items: center;
+    
+}
+.hero-text {
+    display: table;
+ 
 }
 
 .text {
@@ -155,12 +160,9 @@ a {
 
 .btn {
     position: absolute;
-        left: 50%;
-        top: calc(100% - 80px);
-        /* 100% висоти контейнера мінус 80px */
-        transform: translateX(-50%);
-        /* Центрування по горизонталі */
-
+    left: 50%;
+    top: calc(100% - 80px);
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,24 +180,18 @@ a {
     height: 56px;
 
     background: #4d5ae5;
-       
     
 }
 
 .hero-container {
     position: relative;
-    /* Щоб кнопка позиціонувалася відносно контейнера */
-    height: 500px;
-    /* Висота контейнера може бути довільною */
+    height: 472px;
 }
-
-
 
 .btn:hover,
 .btn:focus {
     background-color: #404BBF;
 }
-
 /* #endregion Hero Section */
 
 /* #region Features Section 2*/
@@ -203,7 +199,8 @@ a {
 .features {
     width: 1128px;
     height: auto;
-    padding: 156px 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     margin: auto;
 }
 
@@ -212,7 +209,7 @@ a {
 }
 .features-list {
     display: flex;
-    text-align: center;
+    text-align: start;
     
 }
 
@@ -227,6 +224,7 @@ a {
 }
 
 .features-item {
+    padding: 24px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -247,16 +245,15 @@ a {
 /* #region Team Section 3*/
 .team-section {
     background-color: #F4F4FD;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 120px;
-    
+    height: 732px
 }
 
 .team-list {
     list-style-type: none;
     display: flex;
-    
-    
 }
 
 .team-name {
@@ -266,11 +263,11 @@ a {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
-    padding: 120px 0;
-    
+    margin-bottom: 72px;
 }
 
 .team-item {
+    align-items: center;
     margin: 0 24px;
     border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
@@ -305,7 +302,7 @@ a {
 /* #region Portfolio Section */
 .portfolio {
     align-items: center;
-    padding-top: 120px; 
+    display: inline-block
 }
 
 .portfolio-list {
@@ -314,6 +311,7 @@ a {
     flex-wrap: wrap;
     padding: 0 20px;
     align-items: center;
+    
 }
 
 .portfolio-item img {
@@ -330,9 +328,12 @@ a {
     width: calc(33.33% - 20px); 
     margin-bottom: 20px; 
     box-sizing: border-box;
-    border-bottom: 1px solid #e7e9fc;
+    border: 1px solid #e7e9fc;
+    /* border-radius: 10%; */
     /* border-style: hidden; */
     padding: 16px;
+    margin: auto;
+    
 }
 
 .portfolio-title {
@@ -362,6 +363,9 @@ a {
 
 /* #region Footer Section */
 .footer {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 156px;
     width: auto;
     height: 312px;
     align-items: center;
@@ -369,17 +373,20 @@ a {
 }
 
 .footer-container {
-    position: relative;
+
+    position: absolute;
     display: grid;
+    direction: ltr;
     justify-items: start;
     align-items: center;
     width: 264px;
     height: 112px;
+    
 }
 
-.footer-logo {
-    padding-top: 120px;
-}
+/* .footer-logo {
+    
+} */
 
 .logo-f {
     font-family: "Raleway", sans-serif;
