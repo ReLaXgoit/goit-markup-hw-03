@@ -249,13 +249,13 @@ a {
     background-color: #F4F4FD;
     align-items: center;
     padding: 120px;
+    
 }
 
 .team-list {
     list-style-type: none;
     display: flex;
-    padding: 0 120px;
-    align-items: center;
+    
     
 }
 
@@ -324,12 +324,6 @@ a {
     
 }
 
-.portfolio-section {
-    box-sizing: border-box;
-    padding: 16px;
-    border-bottom: 1px solid #e7e9fc;
-}
-
 .portfolio-item {
     list-style: none; 
     text-align: center;
@@ -337,6 +331,7 @@ a {
     margin-bottom: 20px; 
     box-sizing: border-box;
     border-bottom: 1px solid #e7e9fc;
+    /* border-style: hidden; */
     padding: 16px;
 }
 
