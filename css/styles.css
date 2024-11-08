@@ -27,9 +27,7 @@ a {
     margin: 0px auto;
 }
 
-.section {
-    padding: 120 0;
-}
+
 
 img {
     display: block;
@@ -191,13 +189,13 @@ img {
 /* #region Features Section 2*/
 
 .section-services {
-    padding: 120px 0; /* Встановлено відступи для секції */
+    padding: 120px 0; 
   }
   
   .container {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto; /* Центрування контейнера */
+    margin: 0 auto; 
   }
   
   .visually-hidden {
@@ -210,7 +208,9 @@ img {
     clip: rect(0, 0, 0, 0);
     clip-path: inset(50%);
     overflow: hidden;
+    white-space: nowrap;
   }
+  
   
   .services-list {
     display: flex; 
@@ -225,6 +225,7 @@ img {
   }
   
   .services-title {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -245,19 +246,85 @@ img {
 
 /* #region Team Section 3*/
 .team-section {
+    padding: 120px 0;
     background-color: #F4F4FD;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 732px
+    height: 732px;
 }
 
 .team-list {
     list-style-type: none;
     display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
 }
 
 .team-name {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+    margin-bottom: 72px;
+}
+
+.team-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: #FFFFFF;
+    width: 264px;
+    height: 380px;
+    padding-bottom: 32px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 
+                0 1px 1px rgba(46, 47, 66, 0.16), 
+                0 1px 6px rgba(46, 47, 66, 0.08);
+    margin: 0 24px;
+}
+
+.team-item img {
+    border-radius: 4px 4px 0px 0px;
+    width: 264px;
+    height: 260px;
+}
+
+.name-box {
+    padding-top: 32px;
+    text-align: center;
+}
+
+.team-member-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    margin-bottom: 8px;
+}
+
+.team-member-role {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/* #endregion Team Section */
+
+/* #region Portfolio Section */
+.portfolio {
+    padding: 120px 0;
+    background-color: #F4F4FD;
+}
+
+.portfolio-title {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -267,103 +334,65 @@ img {
     margin-bottom: 72px;
 }
 
-.team-item {
-    align-items: center;
-    margin: 0 24px;
-    border-radius: 0 0 4px 4px;
-    padding: 0px 0px 32px 0px;
-    width: 264px;
-    height: 380px;
-
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    background: #fff;
-}
-
-.team-member-name {
-    text-align: center;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    padding-top: 32px;
-}
-
-.team-member-role {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    padding-top: 8px;
-    text-align: center;
-    
-}
-/* #endregion Team Section */
-
-/* #region Portfolio Section */
-.portfolio {
-    align-items: center;
-    display: inline-block
-}
-
 .portfolio-list {
-    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 20px;
-    align-items: center;
-    
-}
-
-.portfolio-item img {
+    column-gap: 24px;
+    row-gap: 48px;
     list-style: none;
-    width: 100%;
-    height: auto;
-    margin-bottom: 16px;
-    
+    padding: 0;
+    margin: 0;
 }
 
 .portfolio-item {
-    list-style: none; 
-    text-align: center;
-    width: calc(33.33% - 20px); 
-    margin-bottom: 20px; 
-    box-sizing: border-box;
-    border: 1px solid #e7e9fc;
-    /* border-radius: 10%; */
-    /* border-style: hidden; */
-    padding: 16px;
-    margin: auto;
-    
+    flex: 1 1 calc((100% - 48px) / 3); /* Дозволяє елементам займати рівні частини простору */
+    max-width: calc((100% - 48px) / 3); /* Максимальна ширина кожної картки */
+    box-sizing: border-box; /* Враховує padding та border у ширині */
 }
 
-.portfolio-title {
-    padding-bottom: 72px;
-    font-size: 36px;
-    line-height: 1.11;
+.portfolio-section img {
+    display: block;
+    margin: 0 auto; 
+    width: 100%; 
+    height: auto;
+    object-fit: cover;     
+}
+
+.portfolio-section {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    background-color: #fff;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    border-radius: 0 0 4px 4px;
     text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    padding-top: 120px;
+    flex-grow: 1;
+    margin-bottom: 16px; 
+    overflow: cover;     
 }
 
 .portfolio-name {
-    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    text-align: center;
     letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .portfolio-p {
     font-size: 16px;
     line-height: 1.5;
+    text-align: center;
     letter-spacing: 0.02em;
+    color: #434455;
 }
 
 /* #endregion Portfolio Section */
 
 /* #region Footer Section */
 .footer {
+    padding: 100px 0;
     display: flex;
     justify-content: flex-start;
     padding-left: 156px;
@@ -382,12 +411,14 @@ img {
     align-items: center;
     width: 264px;
     height: 112px;
+    margin: 0 auto;
     
 }
 
-/* .footer-logo {
-    
-} */
+.logo footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
 
 .logo-f {
     font-family: "Raleway", sans-serif;
