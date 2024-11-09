@@ -249,14 +249,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
+  width: 100%;
   height: 732px;
 }
 
 .team-list {
   display: flex;
+  justify-content: center; /* Центрування всієї групи блоків */
+  align-items: center;
   gap: 24px;
-  
 }
 
 .team-name {
@@ -270,27 +271,26 @@ img {
 }
 
 .team-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: flex-start; 
   background: #FFFFFF;
-  width: calc((100% - 3 * 24px) / 4);
-  height: 380px;
+  width: 264px; 
+  height: auto;
   padding-bottom: 32px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 
-                0 1px 1px rgba(46, 47, 66, 0.16), 
-                0 1px 6px rgba(46, 47, 66, 0.08);
+              0 1px 1px rgba(46, 47, 66, 0.16), 
+              0 1px 6px rgba(46, 47, 66, 0.08);
   margin: 0 24px;
 }
 
 .team-item img {
   border-radius: 4px 4px 0px 0px;
-  width: 264px;
-  height: 260px;  
+  width: 100%; 
+  height: auto; 
 }
-
 .name-box {
   padding-top: 32px;
   text-align: center;
