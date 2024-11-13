@@ -37,6 +37,7 @@ img {
 /* #region Header */
 .page-header {
   max-width: 1158px;
+  width: 1158px;
   padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
 }
@@ -420,6 +421,7 @@ img {
 .logo-footer-logo {
   display: inline-block;
   margin-bottom: 16px;
+  color: #4D5AE5;
 }
 
 .logo-footer-logo .footer-part {
