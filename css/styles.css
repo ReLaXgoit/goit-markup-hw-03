@@ -22,10 +22,14 @@ a {
 }
 
 .container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 120px 0;
   width: 100%;
-  max-width: 1200px; 
-  margin: 0 auto; 
-  padding: 0; 
 }
 
 img {
@@ -35,9 +39,7 @@ img {
 /* #endregion Global Styles */
 
 /* #region Header */
-.page-header {
-  max-width: 1158px;
-  width: 1158px;
+.page-header {    
   padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
 }
