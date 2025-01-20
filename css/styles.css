@@ -39,7 +39,8 @@ img {
 /* #endregion Global Styles */
 
 /* #region Header */
-.page-header {    
+.page-header {  
+  width: 1158px;
   padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
 }
@@ -86,8 +87,7 @@ img {
   padding: 24px 0 24px;
 }
 
-.nav-link {
-  padding: 24px 0;
+.nav-link { 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -190,7 +190,7 @@ img {
 }
 /* #endregion Hero Section */
 
-/* #region Features Section 2*/
+/* #region Sercisces Section 2*/
 
 .section-services {
   padding: 120px 0; 
@@ -203,17 +203,12 @@ img {
 }
   
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  clip-path: inset(50%);
-  overflow: hidden;
-  white-space: nowrap;
-}  
+  overflow: hidden;  
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;  
+}
   
 .services-list {
   display: flex; 
@@ -248,9 +243,8 @@ img {
 
 /* #region Team Section 3*/
 .team-section {
-  flex-basis: calc((100% - 3 * 24px) / 4);
   padding: 120px 0;
-  background-color: #F4F4FD;
+  background-color: #f4f4fd;
   display: flex;
   justify-content: center;
   height: 732px;
@@ -268,31 +262,29 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2E2F42;
+  color: #2e2f42;
   margin-bottom: 72px;
 }
 
 .team-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .team-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  background: #FFFFFF;
-  width: 264px;
-  height: auto;
-  padding-bottom: 32px;
+  background: #ffffff;
+  width: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
               0 1px 1px rgba(46, 47, 66, 0.16),
               0 1px 6px rgba(46, 47, 66, 0.08);
-  margin: 0 24px;
+  padding-bottom: 32px;
 }
 
 .team-item img {
@@ -302,7 +294,7 @@ img {
 }
 
 .name-box {
-  padding-top: 32px;
+  padding: 32px 0;
   text-align: center;
 }
 
@@ -311,7 +303,7 @@ img {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2E2F42;
+  color: #2e2f42;
   margin-bottom: 8px;
 }
 
@@ -384,7 +376,7 @@ img {
   color: #434455;
 }
 
-
+/* Adjust margins for specific items */
 .portfolio-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -395,11 +387,12 @@ img {
   margin-bottom: 0;
 }
 
+
 /* #endregion Portfolio Section */
 
 /* #region Footer Section */
 .footer {
-  padding: 100px 0 100px;
+  padding: 100px 0;
   display: flex;
   justify-content: flex-start;
   padding-left: 156px;
@@ -436,6 +429,7 @@ img {
   letter-spacing: 0.02em;
   max-width: 264px;
 }
+
 
 /* #endregion Footer Section */
 
