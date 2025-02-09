@@ -22,14 +22,18 @@ a {
 }
 
 .container {
-  width: 100%;
-  max-width: 1200px; 
-  margin: 0 auto; 
-  padding: 0; 
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 img {
   display: block;
+}
+
+.section {
+  padding: 120px 0;
+  width: 100%;
 }
 
 /* #endregion Global Styles */
@@ -37,7 +41,7 @@ img {
 /* #region Header */
 .page-header {
   max-width: 1158px;
-  width: 1158px;
+  width: 1440px;
   padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
 }
@@ -277,10 +281,7 @@ img {
   gap: 24px;
 }
 
-.team-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.team-item {  
   justify-content: flex-start;
   background: #FFFFFF;
   width: 264px;
@@ -422,6 +423,7 @@ img {
   display: inline-block;
   margin-bottom: 16px;
   color: #4D5AE5;
+  
 }
 
 .logo-footer-logo .footer-part {
