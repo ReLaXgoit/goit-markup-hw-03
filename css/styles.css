@@ -196,13 +196,8 @@ img {
 
 .section-services {
   padding: 120px 0; 
-}
-  
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto; 
-}
+} 
+
   
 .visually-hidden {
   position: absolute;
@@ -256,12 +251,6 @@ img {
   display: flex;
   justify-content: center;
   height: 732px;
-}
-
-.container {
-  width: 100%;
-  max-width: 1158px;
-  margin: 0 auto;
 }
 
 .team-name {
@@ -327,13 +316,6 @@ img {
 .portfolio-section {
   padding-top: 120px;
   padding-bottom: 120px;
-}
-
-.container {
-  max-width: 1128px;
-  margin: 0 auto;
-  padding: 0 15px;
-  box-sizing: border-box;
 }
 
 .portfolio-heading {
